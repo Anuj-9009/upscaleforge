@@ -291,8 +291,7 @@ graph TD
 ---
 
 <div align="center" style="background: radial-gradient(circle, rgba(152,255,152,0.1) 0%, transparent 80%); padding: 24px; border-radius: 16px;">
-  <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin-bottom: 4px;">
+  <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
     built by anuj with love and nicotine
   </p>
-  <sub style="color: #6f7a6c;">Pair-programmed with Antigravity AI Coding Assistant 💚</sub>
 </div>
