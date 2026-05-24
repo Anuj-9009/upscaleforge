@@ -190,9 +190,9 @@ graph TD
 <div align="center" style="background: radial-gradient(circle, rgba(152,255,152,0.1) 0%, transparent 80%); padding: 24px; border-radius: 16px;">
   <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(0, 110, 32, 0.06); border: 1px solid rgba(0, 110, 32, 0.15); border-radius: 99px; margin-bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #006e20; line-height: 1;">
     <img src="assets/footer.svg" width="8" alt="footer">
-    <span>Now Playing: "Runaway" — Kanye West</span>
+    <span>Now Playing: "Devil in a New Dress" — Kanye West</span>
   </div>
   <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
-    built by ANUJ with ❤️ to the iconic piano keys of kanye west's "Runaway"
+    built by ANUJ with ❤️ to the soulful guitar riffs of kanye west's "Devil in a New Dress"
   </p>
 </div>
