@@ -2,46 +2,7 @@
 <div align="center">
   <br />
   <!-- Glowing Animated Banner (Pure Vector CSS SVG) -->
-  <svg width="100%" height="160" viewBox="0 0 800 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .text-title {
-        font-family: 'Sora', 'Inter', system-ui, -apple-system, sans-serif;
-        font-weight: 800;
-        font-size: 46px;
-        fill: url(#mintGradient);
-        filter: drop-shadow(0px 15px 20px rgba(0, 110, 32, 0.25));
-      }
-      .text-subtitle {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        fill: #3f4a3d;
-        letter-spacing: 0.15em;
-      }
-      .glow-blob {
-        animation: floatBlob 8s ease-in-out infinite alternate;
-      }
-      @keyframes floatBlob {
-        0% { transform: translate(0px, 0px) scale(1); filter: blur(30px); opacity: 0.4; }
-        100% { transform: translate(30px, -10px) scale(1.15); filter: blur(40px); opacity: 0.65; }
-      }
-    </style>
-    <!-- Background Blur Decorative Blobs -->
-    <circle class="glow-blob" cx="180" cy="80" r="70" fill="#98ff98" />
-    <circle class="glow-blob" cx="620" cy="90" r="60" fill="#e8f3ea" style="animation-delay: -4s;" />
-    
-    <!-- Title Text -->
-    <text x="50%" y="80" dominant-baseline="middle" text-anchor="middle" class="text-title">U P S C A L E F O R G E</text>
-    <text x="50%" y="125" dominant-baseline="middle" text-anchor="middle" class="text-subtitle">AI-POWERED IMAGE & VIDEO SUPER-RESOLUTION</text>
-    
-    <defs>
-      <linearGradient id="mintGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#006e20" />
-        <stop offset="50%" stop-color="#16a34a" />
-        <stop offset="100%" stop-color="#006e20" />
-      </linearGradient>
-    </defs>
-  </svg>
+  <img src="assets/banner.svg" width="100%" alt="banner">
 
   <p>
     <img src="https://img.shields.io/badge/React-18-006e20?style=for-the-badge&logo=react&logoColor=white" alt="React 18" />
@@ -61,71 +22,7 @@
 <div align="center">
   <h3>⚡ Live AI Processing Pipeline Monitor</h3>
   <br />
-  <svg width="640" height="150" viewBox="0 0 640 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #111411; border-radius: 20px; border: 1px solid rgba(0,110,32,0.25); box-shadow: 0 10px 30px rgba(0,110,32,0.15);">
-    <style>
-      .glow-node {
-        animation: pulseNode 2s infinite ease-in-out alternate;
-      }
-      .line-flow {
-        stroke-dasharray: 8 8;
-        animation: marchFlow 3s infinite linear;
-      }
-      .core-pulse {
-        animation: pulseCore 1.5s infinite alternate ease-in-out;
-        transform-origin: 320px 75px;
-      }
-      .radar-sweep {
-        animation: sweepRadar 4s infinite linear;
-        transform-origin: 320px 75px;
-      }
-      @keyframes pulseNode {
-        0% { r: 5; fill: #006e20; filter: drop-shadow(0 0 2px #006e20); }
-        100% { r: 8; fill: #98ff98; filter: drop-shadow(0 0 8px #98ff98); }
-      }
-      @keyframes marchFlow {
-        0% { stroke-dashoffset: 40; }
-        100% { stroke-dashoffset: 0; }
-      }
-      @keyframes pulseCore {
-        0% { transform: scale(0.92); opacity: 0.7; filter: drop-shadow(0 0 5px #006e20); }
-        100% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 20px #98ff98); }
-      }
-      @keyframes sweepRadar {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-      .tag-text {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 10px;
-        fill: #5e705c;
-      }
-    </style>
-
-    <!-- Scanning Radar Grid -->
-    <circle cx="320" cy="75" r="55" stroke="rgba(0,110,32,0.12)" stroke-width="1" />
-    <circle cx="320" cy="75" r="35" stroke="rgba(0,110,32,0.08)" stroke-width="1" />
-    <line x1="320" y1="20" x2="320" y2="130" stroke="rgba(0,110,32,0.08)" />
-    <line x1="265" y1="75" x2="375" y2="75" stroke="rgba(0,110,32,0.08)" />
-    
-    <!-- Sweep Radar Line -->
-    <line class="radar-sweep" x1="320" y1="75" x2="320" y2="20" stroke="rgba(152,255,152,0.3)" stroke-width="2" />
-
-    <!-- Connected Data Flow Lines -->
-    <path class="line-flow" d="M 80,75 L 265,75" stroke="#16a34a" stroke-width="2" />
-    <path class="line-flow" d="M 375,75 L 560,75" stroke="#16a34a" stroke-width="2" style="animation-delay: -1.5s;" />
-    
-    <!-- Input Node -->
-    <circle class="glow-node" cx="80" cy="75" r="6" />
-    <text x="80" y="105" text-anchor="middle" class="tag-text">INPUT BUFFER</text>
-
-    <!-- Active Processor Core (AI Kernel) -->
-    <rect class="core-pulse" x="295" y="50" width="50" height="50" rx="10" fill="#006e20" stroke="#98ff98" stroke-width="2" />
-    <text x="320" y="118" text-anchor="middle" class="tag-text" style="fill: #98ff98; font-weight: bold;">AI ENGINE</text>
-
-    <!-- Output Node -->
-    <circle class="glow-node" cx="560" cy="75" r="6" style="animation-delay: -1s;" />
-    <text x="560" y="105" text-anchor="middle" class="tag-text">COMPILED OUT</text>
-  </svg>
+  <img src="assets/visualizer.svg" width="640" alt="visualizer">
 </div>
 
 <br />
@@ -292,14 +189,10 @@ graph TD
 
 <div align="center" style="background: radial-gradient(circle, rgba(152,255,152,0.1) 0%, transparent 80%); padding: 24px; border-radius: 16px;">
   <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(0, 110, 32, 0.06); border: 1px solid rgba(0, 110, 32, 0.15); border-radius: 99px; margin-bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #006e20; line-height: 1;">
-    <svg width="8" height="8" style="vertical-align: middle; margin-right: 4px;">
-      <circle cx="4" cy="4" r="4" fill="#006e20">
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-    </svg>
+    <img src="assets/footer.svg" width="8" alt="footer">
     <span>Now Playing: "Space Cadet" — Metro Boomin</span>
   </div>
   <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
-    built by anuj with ❤️ and late-night audio frequencies
+    built by ANUJ with ❤️ and late-night audio frequencies
   </p>
 </div>
