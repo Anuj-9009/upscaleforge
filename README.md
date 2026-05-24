@@ -1,24 +1,15 @@
 <!-- Header Block -->
 <div align="center">
   <br />
-  <!-- Glowing Animated Banner (Pure Vector CSS SVG) -->
-  <img src="assets/header.svg" width="100%" alt="banner">
-
-  <p>
-    <img src="https://img.shields.io/badge/React-18-006e20?style=for-the-badge&logo=react&logoColor=white" alt="React 18" />
-    <img src="https://img.shields.io/badge/FastAPI-Python-006e20?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-    <img src="https://img.shields.io/badge/Tailwind--v4-Mint--M3-006e20?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind v4" />
-    <img src="https://img.shields.io/badge/Hardware-Accelerated-006e20?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA / MPS Ready" />
-  </p>
+  <img src="assets/header-v2.svg" width="100%" alt="banner">
   
   <p>
-    A high-fidelity full-stack web application delivering state-of-the-art super-resolution and temporal frame interpolation for image and video formats. Completely local, sandboxed, and optimized for CUDA and Apple Silicon GPU cores.
+    <!-- AI Pipeline Pulse Monitor (Glow CSS vector SVG) -->
   </p>
 </div>
 
 <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 110, 32, 0), rgba(0, 110, 32, 0.4), rgba(0, 110, 32, 0));" />
 
-<!-- AI Pipeline Pulse Monitor (Glow CSS vector SVG) -->
 <div align="center">
   <h3>⚡ Live AI Processing Pipeline Monitor</h3>
   <br />
@@ -311,7 +302,7 @@ Now, **open a second, brand new terminal window** (do not close the first one!) 
 ---
 
 <div align="center" style="margin-top: 40px;">
-  <img src="assets/footer.svg" width="100%" alt="footer">
+  <img src="assets/footer-v2.svg" width="100%" alt="footer">
 </div>
 <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0; text-align: center;">
   built by ANUJ with ❤️ to the soulful guitar riffs of kanye west's 'Devil in a New Dress'
