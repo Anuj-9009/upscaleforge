@@ -1,5 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" style="vertical-align: middle; margin-right: 4px;">
-      <circle cx="4" cy="4" r="4" fill="#006e20">
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-    </svg>
+<svg width="600" height="110" viewBox="0 0 600 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .player-card {
+      fill: #0b0f0b;
+      stroke: rgba(0, 110, 32, 0.25);
+      stroke-width: 1.5;
+      rx: 16px;
+    }
+    .vinyl {
+      animation: rotateVinyl 6s linear infinite;
+      transform-origin: 50px 55px;
+    }
+    .vinyl-groove {
+      stroke: #006e20;
+      stroke-width: 0.8;
+      opacity: 0.35;
+    }
+    .pulse-dot {
+      fill: #98ff98;
+      animation: pulseGlow 1.5s infinite alternate ease-in-out;
+    }
+    .eq-bar {
+      fill: #006e20;
+      animation: eqJump 1.4s infinite alternate ease-in-out;
+    }
+    .signature-text {
+      font-family: 'Sora', 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #006e20;
+    }
+    .track-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      fill: #98ff98;
+    }
+    .marquee {
+      animation: slideMarquee 15s linear infinite;
+    }
+    .heart {
+      fill: #ef4444;
+      animation: heartbeat 1.2s infinite alternate ease-in-out;
+      transform-origin: 228px 78px;
+    }
+    @keyframes rotateVinyl {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulseGlow {
+      0% { opacity: 0.4; filter: drop-shadow(0 0 2px #006e20); }
+      100% { opacity: 1; filter: drop-shadow(0 0 6px #98ff98); }
+    }
+    @keyframes eqJump {
+      0% { height: 4px; y: 65px; }
+      100% { height: 25px; y: 44px; }
+    }
+    @keyframes slideMarquee {
+      0% { transform: translate(0px, 0); }
+      100% { transform: translate(-330px, 0); }
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(0.9); }
+      100% { transform: scale(1.1); filter: drop-shadow(0 0 3px #ef4444); }
+    }
+  </style>
+  <rect x="1" y="1" width="598" height="108" class="player-card" />
+  <circle cx="50" cy="55" r="40" fill="#006e20" opacity="0.08" filter="blur(20px)" />
+  <g class="vinyl">
+    <circle cx="50" cy="55" r="30" fill="#151a15" stroke="#006e20" stroke-width="1" />
+    <circle cx="50" cy="55" r="24" class="vinyl-groove" />
+    <circle cx="50" cy="55" r="18" class="vinyl-groove" />
+    <circle cx="50" cy="55" r="12" class="vinyl-groove" stroke="#98ff98" />
+    <circle cx="50" cy="55" r="4" fill="#006e20" />
+  </g>
+  <circle cx="50" cy="55" r="2" class="pulse-dot" />
+  <svg x="100" y="24" width="380" height="24" viewBox="0 0 380 24" style="overflow: hidden;">
+    <g class="marquee">
+      <text x="0" y="16" class="track-text">Now Playing: "Devil in a New Dress" — Kanye West   •   Now Playing: "Devil in a New Dress" — Kanye West</text>
+    </g>
+  </svg>
+  <text x="100" y="78" class="signature-text">built by ANUJ with</text>
+  <path class="heart" d="M228,74 C227,72 224,72 223,73 C222,74 222,76 224,78 L228,82 L232,78 C234,76 234,74 233,73 C232,72 229,72 228,74 Z" />
+  <text x="241" y="78" class="signature-text">to the soulful guitar riffs of kanye west</text>
+  <rect class="eq-bar" x="515" y="50" width="3" height="15" rx="1.5" style="animation-delay: -0.2s;" />
+  <rect class="eq-bar" x="523" y="45" width="3" height="20" rx="1.5" style="animation-delay: -0.6s;" fill="#98ff98" />
+  <rect class="eq-bar" x="531" y="52" width="3" height="13" rx="1.5" style="animation-delay: -1.0s;" />
+  <rect class="eq-bar" x="539" y="48" width="3" height="17" rx="1.5" style="animation-delay: -0.4s;" />
+  <rect class="eq-bar" x="547" y="42" width="3" height="23" rx="1.5" style="animation-delay: -0.8s;" fill="#98ff98" />
+</svg>
