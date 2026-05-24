@@ -291,7 +291,15 @@ graph TD
 ---
 
 <div align="center" style="background: radial-gradient(circle, rgba(152,255,152,0.1) 0%, transparent 80%); padding: 24px; border-radius: 16px;">
+  <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(0, 110, 32, 0.06); border: 1px solid rgba(0, 110, 32, 0.15); border-radius: 99px; margin-bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #006e20; line-height: 1;">
+    <svg width="8" height="8" style="vertical-align: middle; margin-right: 4px;">
+      <circle cx="4" cy="4" r="4" fill="#006e20">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+    <span>Now Playing: Metro Boomin // The 1975 // Kanye</span>
+  </div>
   <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
-    built by anuj with love and nicotine
+    built by anuj with ❤️ and late-night audio frequencies
   </p>
 </div>
