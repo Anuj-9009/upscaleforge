@@ -297,7 +297,7 @@ graph TD
         <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
       </circle>
     </svg>
-    <span>Now Playing: Metro Boomin // The 1975 // Kanye</span>
+    <span>Now Playing: "Space Cadet" — Metro Boomin</span>
   </div>
   <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
     built by anuj with ❤️ and late-night audio frequencies
