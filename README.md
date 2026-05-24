@@ -118,26 +118,144 @@ graph TD
   </div>
 </details>
 
-<details>
-  <summary style="font-family: 'Sora', sans-serif; font-weight: 600; color: #006e20; cursor: pointer; padding: 8px 12px; background: rgba(0, 110, 32, 0.05); border-radius: 12px; outline: none; margin-bottom: 8px;">
-    🚀 Quick Setup & Run Instructions (Click to Expand)
-  </summary>
-  <div style="padding: 12px;">
-    <h4>Prerequisites</h4>
-    <ul>
-      <li>Python 3.10+</li>
-      <li>Node.js 18+</li>
-      <li>FFmpeg installed and available on system PATH</li>
-    </ul>
-    
-    <h4>Terminal 1 - Backend Server</h4>
-    <pre>cd backend<br />pip install -r pyproject.toml # or use poetry/pipenv<br />python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload</pre>
-    
-    <h4>Terminal 2 - Frontend Web UI</h4>
-    <pre>cd frontend<br />npm install<br />npm run dev</pre>
-    <p>Open <b>http://localhost:5173/</b> in your browser and start upscaling!</p>
-  </div>
-</details>
+### 🚀 Complete Setup & Installation Guide
+
+This guide will help you set up UpscaleForge on your computer step-by-step. We have written it in simple, everyday language so that anyone—even if you have never run a program from the terminal before—can easily follow along!
+
+---
+
+#### 📦 1. Pre-requirements (What you need on your computer)
+
+Think of these as the ingredients you need before cooking. You need three things:
+
+##### A. Python (The Brains of the Operation)
+* **What it does:** Runs our AI processing backend server.
+* **How to get it:**
+  * **Download:** Go to [python.org/downloads](https://www.python.org/downloads/) and download the latest version for your computer (Windows or Mac).
+  * **⚠️ IMPORTANT (Windows Users):** When installing, **make sure to check the box that says "Add Python to PATH"** at the bottom of the installer window!
+  * **Verify:** Open your Terminal (Mac) or Command Prompt (Windows) and type:
+    ```bash
+    python --version
+    ```
+    (If that doesn't work, try `python3 --version`). You should see a number like `Python 3.10.x` or higher.
+
+##### B. Node.js (The User Interface Engine)
+* **What it does:** Runs the beautiful web screen (frontend) where you upload images/videos.
+* **How to get it:**
+  * **Download:** Go to [nodejs.org](https://nodejs.org/) and download the **LTS (Long Term Support)** version. It has a green button. Just click next-next-finish to install it.
+  * **Verify:** Open your terminal and type:
+    ```bash
+    node --version
+    npm --version
+    ```
+    You should see two version numbers (like `v20.x.x` and `10.x.x`).
+
+##### C. FFmpeg (The Video Wizard)
+* **What it does:** Helps process and chop up videos for upscaling.
+* **How to get it:**
+  * 🍎 **Mac Users:** Open your terminal, paste this command, and press Enter:
+    ```bash
+    brew install ffmpeg
+    ```
+    *(If you don't have Homebrew installed, copy-paste this first: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`)*
+  * 💻 **Windows Users:** Open Command Prompt *as Administrator* (right-click and choose "Run as Administrator"), paste this command, and press Enter:
+    ```cmd
+    winget install Gyan.FFmpeg
+    ```
+    *(Alternatively, download it from [ffmpeg.org](https://ffmpeg.org/download.html), unzip it, and add the `bin` folder to your System Environment variables).*
+  * 🐧 **Linux Users (Ubuntu/Debian):** Type:
+    ```bash
+    sudo apt update && sudo apt install ffmpeg -y
+    ```
+  * **Verify:** Type:
+    ```bash
+    ffmpeg -version
+    ```
+    You should see a bunch of text starting with `ffmpeg version...`. If you do, you are ready!
+
+---
+
+#### 💻 2. Step-by-Step Installation
+
+Now, let's assemble the project!
+
+##### Step A: Download the Code
+If you know how to use Git, run this in your terminal:
+```bash
+git clone https://github.com/Anuj-9009/upscaleforge.git
+cd upscaleforge
+```
+*If you don't know what Git is,* simply click the green **"Code"** button at the top of this GitHub page, click **"Download ZIP"**, extract the ZIP file somewhere on your computer, open your terminal, and navigate into that folder!
+
+##### Step B: Set Up the Backend Server (Terminal 1)
+Open a terminal window and type the following commands line by line:
+
+1. **Navigate to the backend directory:**
+   ```bash
+   cd backend
+   ```
+2. **Create a Virtual Environment (A safe container so dependencies don't get mixed up):**
+   ```bash
+   python -m venv venv
+   ```
+   *(If you are on Linux or Mac, you might need to use `python3 -m venv venv`)*
+3. **Activate the Virtual Environment:**
+   * 🍎 **Mac / Linux:**
+     ```bash
+     source venv/bin/activate
+     ```
+   * 💻 **Windows (Command Prompt):**
+     ```cmd
+     venv\Scripts\activate
+     ```
+   * 💻 **Windows (PowerShell):**
+     ```powershell
+     .\venv\Scripts\Activate.ps1
+     ```
+   *(You will notice a `(venv)` prefix appear at the start of your terminal line! This means it worked.)*
+4. **Install the dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Start the server:**
+   ```bash
+   python main.py
+   ```
+   You should see a message saying: `INFO: Uvicorn running on http://0.0.0.0:8000`. Perfect! Keep this terminal open.
+
+##### Step C: Set Up the Frontend Interface (Terminal 2)
+Now, **open a second, brand new terminal window** (do not close the first one!) and navigate to the project directory, then type:
+
+1. **Navigate to the frontend directory:**
+   ```bash
+   cd frontend
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   *(This may take a minute or two to download the packages).*
+3. **Start the frontend server:**
+   ```bash
+   npm run dev
+   ```
+   You will see a message saying: `Local: http://localhost:5173/`.
+
+🎉 **You are completely done!** Now, open your web browser (like Chrome or Safari) and go to `http://localhost:5173/`. You will see the beautiful UpscaleForge workspace ready to upscale your media!
+
+---
+
+#### 🛡️ 3. Troubleshooting (If things go wrong)
+
+* **Error: `Command not found` or `python/node is not recognized`**
+  * **Fix:** This means the program was not added to your system's PATH. Try restarting your terminal window, or reinstalling the program and making sure to check the "Add to PATH" box.
+* **Error: `Port 8000 is already in use`**
+  * **Fix:** Another program is using port 8000. You can stop it, or run the backend on a different port by typing: `python main.py` and configuring the port, or simply closing the application that is using it.
+* **Error: `FFmpeg not found`**
+  * **Fix:** Ensure you have run the installation command for your operating system described in Section 1-C. Close and re-open your terminal afterwards so it refreshes.
+
+---
+
 
 <details>
   <summary style="font-family: 'Sora', sans-serif; font-weight: 600; color: #006e20; cursor: pointer; padding: 8px 12px; background: rgba(0, 110, 32, 0.05); border-radius: 12px; outline: none;">
