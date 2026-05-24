@@ -2,7 +2,7 @@
 <div align="center">
   <br />
   <!-- Glowing Animated Banner (Pure Vector CSS SVG) -->
-  <img src="./assets/header.svg" width="100%" alt="banner">
+  <img src="assets/header.svg" width="100%" alt="banner">
 
   <p>
     <img src="https://img.shields.io/badge/React-18-006e20?style=for-the-badge&logo=react&logoColor=white" alt="React 18" />
@@ -187,10 +187,14 @@ graph TD
 
 ---
 
+
+</div>
+
+---
+
 <div align="center" style="margin-top: 40px;">
-  <img src="././assets/footer.svg" width="100%" alt="footer">
+  <img src="assets/footer.svg" width="100%" alt="footer">
 </div>
-  <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0;">
-    built by ANUJ with ❤️ to the soulful guitar riffs of kanye west's "Devil in a New Dress"
-  </p>
-</div>
+<p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600; color: #006e20; margin: 0; text-align: center;">
+  built by ANUJ with ❤️ to the soulful guitar riffs of kanye west's 'Devil in a New Dress'
+</p>

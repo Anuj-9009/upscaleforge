@@ -1,40 +1,44 @@
 <svg width="800" height="160" viewBox="0 0 800 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .text-title {
-        font-family: 'Sora', 'Inter', system-ui, -apple-system, sans-serif;
-        font-weight: 800;
-        font-size: 46px;
-        fill: url(#mintGradient);
-        filter: drop-shadow(0px 15px 20px rgba(0, 110, 32, 0.25));
-      }
-      .text-subtitle {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        fill: #3f4a3d;
-        letter-spacing: 0.15em;
-      }
-      .glow-blob {
-        animation: floatBlob 8s ease-in-out infinite alternate;
-      }
-      @keyframes floatBlob {
-        0% { transform: translate(0px, 0px) scale(1); filter: blur(30px); opacity: 0.4; }
-        100% { transform: translate(30px, -10px) scale(1.15); filter: blur(40px); opacity: 0.65; }
-      }
-    </style>
-    <!-- Background Blur Decorative Blobs -->
-    <circle class="glow-blob" cx="180" cy="80" r="70" fill="#98ff98" />
-    <circle class="glow-blob" cx="620" cy="90" r="60" fill="#e8f3ea" style="animation-delay: -4s;" />
-    
-    <!-- Title Text -->
-    <text x="50%" y="80" dominant-baseline="middle" text-anchor="middle" class="text-title">U P S C A L E F O R G E</text>
-    <text x="50%" y="125" dominant-baseline="middle" text-anchor="middle" class="text-subtitle">AI-POWERED IMAGE & VIDEO SUPER-RESOLUTION</text>
-    
-    <defs>
-      <linearGradient id="mintGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#006e20" />
-        <stop offset="50%" stop-color="#16a34a" />
-        <stop offset="100%" stop-color="#006e20" />
-      </linearGradient>
-    </defs>
-  </svg>
+  <style>
+    .text-title {
+      font-family: 'Sora', 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: url(#headerGrad);
+      filter: drop-shadow(0px 8px 16px rgba(0, 110, 32, 0.3));
+      letter-spacing: 0.08em;
+    }
+    .text-subtitle {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #ffffff;
+      opacity: 0.65;
+      letter-spacing: 0.16em;
+    }
+    .glow-blob {
+      animation: floatBlob 7s ease-in-out infinite alternate;
+    }
+    @keyframes floatBlob {
+      0% { transform: translate(0px, 0px) scale(1); filter: blur(35px); opacity: 0.35; }
+      100% { transform: translate(30px, -15px) scale(1.18); filter: blur(45px); opacity: 0.6; }
+    }
+  </style>
+  <rect width="800" height="160" fill="#070d08" rx="16" />
+  
+  <!-- Background Blur Decorative Blobs -->
+  <circle class="glow-blob" cx="190" cy="80" r="75" fill="#98ff98" />
+  <circle class="glow-blob" cx="610" cy="90" r="65" fill="#006e20" style="animation-delay: -3.5s;" />
+  
+  <!-- Title Text -->
+  <text x="50%" y="78" dominant-baseline="middle" text-anchor="middle" class="text-title">U P S C A L E F O R G E</text>
+  <text x="50%" y="122" dominant-baseline="middle" text-anchor="middle" class="text-subtitle">AI-POWERED IMAGE & VIDEO SUPER-RESOLUTION</text>
+  
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#006e20" />
+      <stop offset="50%" stop-color="#98ff98" />
+      <stop offset="100%" stop-color="#006e20" />
+    </linearGradient>
+  </defs>
+</svg>
