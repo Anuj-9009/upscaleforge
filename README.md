@@ -1,14 +1,12 @@
-<!-- Header Block -->
-<div align="center">
-  <br />
-  <img src="assets/header-v2.svg" width="100%" alt="banner">
-  
-  <p>
-    <!-- AI Pipeline Pulse Monitor (Glow CSS vector SVG) -->
-  </p>
-</div>
+# UpscaleForge 🚀
 
-<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 110, 32, 0), rgba(0, 110, 32, 0.4), rgba(0, 110, 32, 0));" />
+UpscaleForge is a state-of-the-art, high-performance web dashboard application for client-side and server-side image & video upscaling and super-resolution.
+
+---
+
+UpscaleForge is a state-of-the-art, high-performance web dashboard application for client-side and server-side image & video upscaling and super-resolution.
+
+---
 
 <div align="center">
   <h3>⚡ Live AI Processing Pipeline Monitor</h3>
@@ -247,7 +245,6 @@ Now, **open a second, brand new terminal window** (do not close the first one!) 
 
 ---
 
-
 <details>
   <summary style="font-family: 'Sora', sans-serif; font-weight: 600; color: #006e20; cursor: pointer; padding: 8px 12px; background: rgba(0, 110, 32, 0.05); border-radius: 12px; outline: none;">
     ⌨️ Power Keyboard Shortcuts (Click to Expand)
@@ -295,7 +292,6 @@ Now, **open a second, brand new terminal window** (do not close the first one!) 
 </details>
 
 ---
-
 
 </div>
 
